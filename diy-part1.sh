@@ -23,8 +23,8 @@ git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/openwrt
 #删除重复软件包
 #rm -rf package/lean/luci-app-dockerman package/lean/luci-app-pushbot
 #更新安装feeds
-./scripts/feeds update -a
-./scripts/feeds install -a
+#./scripts/feeds update -a
+#./scripts/feeds install -a
 #设置环境变量
 useVersionInfo=$(git show -s --date=short --format="编译前的最后一次[➦主源码](https://github.com/coolsnowwolf/lede)更新记录:<br/>更新人: %an<br/>更新时间: %cd<br/>更新内容: %s<br/>哈希值: %H")
 echo "useVersionInfo=$useVersionInfo" >> $GITHUB_ENV
